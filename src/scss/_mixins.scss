@@ -1,0 +1,11 @@
+@mixin respond($breakpoint) {
+    @if ($breakpoint == large) {
+        @media (min-width: 1000px) {@content}
+    }
+}
+
+@mixin box-shadow ($values...) {
+    box-shadow: $values;
+    -webkit-box-shadow: $values;
+    -moz-box-shadow: $values;
+}
